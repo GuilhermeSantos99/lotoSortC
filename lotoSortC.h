@@ -16,7 +16,13 @@ void quina()
     
     for ( int i = 0; i < 5; ++i )
     { 
-        printf("%d ", 1 + rand() % 80);
+       if ( i < 4 )
+      {
+         printf("%d - ", 1 + rand() % 80);
+      } else
+      {
+         printf("%d", 1 + rand() % 80);
+      }
     }
 }
 
@@ -26,7 +32,13 @@ void sena()
     
     for ( int i = 0; i < 6; ++i )
     { 
-        printf("%d ", 1 + rand() % 60);
+        if ( i < 5 )
+        {
+            printf("%d - ", 1 + rand() % 60);
+        } else 
+        {
+            printf("%d", 1 + rand() % 60);
+        }
     }
 }
 
@@ -36,7 +48,13 @@ void mania()
     
     for ( int i = 0; i < 6; ++i )
     { 
-        printf("%d ", 1 + rand() % 60);
+        if ( i < 5 )
+        {    
+            printf("%d - ", 1 + rand() % 60);
+        } else 
+        {
+            printf("%d", 1 + rand() % 60);
+        }
     }
 }
 
@@ -47,8 +65,15 @@ void facil()
     
     for ( int i = 0; i < 15; ++i )
     { 
-        printf("%d ", 1 + rand() % 25);
+        if ( i < 14 )
+        {
+            printf("%d - ", 1 + rand() % 25);
+        } else 
+        {
+            printf("%d", 1 + rand() % 25);
+        }
     }
+    
 }
 
 #endif
