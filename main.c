@@ -26,21 +26,25 @@ int main () {
 
       if ( tipoJogo == 1 )
       {
+         system("clear");
          printf("Quina\n");
          quina();
          printf("\n");
       } else if ( tipoJogo == 2)
       {
+         system("clear");
          printf("Mega-Sena\n");
          sena();
          printf("\n");
       } else if ( tipoJogo == 3 )
       {
+         system("clear");
          printf("LotoMania\n");
          mania();
          printf("\n");
       } else if ( tipoJogo == 4 )
       {
+         system("clear");
          printf("LotoFácil\n");
          facil();
          printf("\n");
