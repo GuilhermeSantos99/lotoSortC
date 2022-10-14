@@ -7,24 +7,9 @@ int tipoJogo;
 
 void run()
 {
-
-	int continuar = 0;
    while ( true )
    {
-      int tipoJogo;
-      
-      printf("\n");
-      printf("======= lotoSort ========\n");
-      printf("_________________________\n");
-      printf("| - Jogos disponíveis - |\n");
-      printf("|-----------------------|\n");
-      printf("| 1 - Quina             |\n");
-      printf("| 2 - Mega-Sena         |\n");
-      printf("| 3 - LotoMania         |\n");
-      printf("| 4 - LotoFácil         |\n");
-      printf("|-----------------------|\n");
-      printf("Digite o número do tipo de sorteio: \n> ");
-      scanf("%d", &tipoJogo);
+      showMenu();
 
       if ( tipoJogo == 1 )
       {
@@ -50,19 +35,15 @@ void run()
          printf("LotoFácil\n");
          facil();
          printf("\n");
+      } else if ( tipoJogo == 5 )
+      {
+        printf("Saindo...");
+        break;
       } else {
          system("clear");
          printf("Opção inválida, tente novamente\n\n");
       }
-      
-      printf("Deseja gerar mais números: [1 = Sim / 2 = Não]\n> ");
-      scanf("%d", &continuar);
-      if (continuar == 2) {
-         break;
-      }
    }
-
-
 }
 
 void showMenu()
@@ -76,6 +57,8 @@ void showMenu()
    printf("| 2 - Mega-Sena         |\n");
    printf("| 3 - LotoMania         |\n");
    printf("| 4 - LotoFácil         |\n");
+   printf("|- - - - - - - - - - - -|\n");
+   printf("| 5 - Sair              |\n");
    printf("|-----------------------|\n");
    printf("Digite o número do tipo de sorteio: \n> ");
    scanf("%d", &tipoJogo);   
